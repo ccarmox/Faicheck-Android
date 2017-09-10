@@ -1,0 +1,18 @@
+<!--
+  ~ Copyright (c) 2017. Cristian Do Carmo Rodriguez
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="top">
+
+
+    <RelativeLayout
+        android:id="@+id/color"
+        android:layout_width="48dp"
+        android:layout_height="48dp">
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. Cristian Do Carmo Rodriguez
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".Materias">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/busqueda"
+            android:background="@drawable/sombra"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/texto_busqueda"
+                android:layout_toLeftOf="@+id/buscar"
+                android:layout_alignParentLeft="true"
+                android:background="#fff"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-light"
+                android:textSize="21sp"
+                android:layout_alignTop="@+id/buscar"
+                android:layout_alignBottom="@+id/buscar"
+                android:hint="Buscar"
+                android:layout_alignParentRight="false"
+                android:layout_marginLeft="16sp" />
+
+            <ImageButton
+                android:scaleType="fitCenter"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:id="@+id/buscar"
+                android:background="@drawable/buscar"
+                android:layout_margin="5dp"
+                android:layout_column="1"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buscar_api"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sombra"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/texto_api"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:text="No se ha encontrado nada."
+                android:textColor="@color/principal_oscuro"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/texto_api2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texto_api"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:text="Descarga Blue para realizar búsquedas complejas"
+                android:textColor="@color/principal"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/texto_api2"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/abrir_google_play"
+                    android:layout_width="220dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/google_play" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/abrir_google_play"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_api_busqueda" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lista"
+            android:background="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:drawSelectorOnTop="false"
+            android:focusable="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/busqueda"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

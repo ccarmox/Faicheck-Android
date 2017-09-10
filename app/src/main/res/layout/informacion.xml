@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerlayout1">
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        app:expandedTitleMarginStart="70dp">
+
+        <android.support.design.widget.AppBarLayout
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="fill_parent"
+            android:layout_height="230dp"
+            android:id="@+id/appBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/CollapsingToolbarLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:background="#f5f5f5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_collapseMode="parallax"
+                    android:id="@+id/contenido2">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/faicheck"
+                        android:id="@+id/portada"
+                        android:layout_margin="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText"
+                        android:textColor="#575757"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="24sp"
+                        android:text="Información"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="26dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@drawable/gradiente"
+                        android:layout_alignParentBottom="true"></RelativeLayout>
+
+                </RelativeLayout>
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:layout_collapseMode="pin"
+                    app:titleTextAppearance="@style/Toolbar.TitleText"
+                    android:minHeight="?attr/actionBarSize"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:id="@+id/View"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ebebeb">
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/scrollView"
+                        android:layout_margin="16sp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="\nIMPORTANT NOTE: The statements listed below as the &apos;Faitic Platform&apos; section may change without confirmation. The user is responsible of periodically checking these statements.\n\n=== Faicheck ===\n\nFaicheck (Android) - A NON OFFICIAL application to manage the Faitic Platform.\nCopyright (C) 2017 Cristian Do Carmo Rodríguez\n\nAdapted to Android from Faicheck code Copyright (C) 2016, 2017 David Ricardo Araújo Piñeiro.\n \nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.\n\n\n=== Faitic Platform ===\n\nThis program uses as server the Faitic platform (faitic.uvigo.es), property of the &apos;Servicio de Teledocencia&apos; from the &apos;Universidad de Vigo&apos; (uvigo.gal). All the rights from that platform are reserved to that entity, and the usage of that platform (Including, but not limited to, the personal data usage), as well as the Faitic platform contents, are responsibility of the Faitic platform and subjected to the terms and conditions from the Faitic Platform.\n\nIn order to connect to the Faitic Platform, Faicheck will request the user name and the password to connect to that platform, and would never send the personal data to anything else than the Faitic Platform from the &apos;Universidad de Vigo&apos;. Faicheck will only save this information on the local machine if it is requested by the user, as part of the Remember username and Remember password options. Regardless, Faicheck will never be responsible in any way about any kind of data loss. See the GNU General Public License for the details.\n\nIn order to check for updates, this application may attempt to download a JSON static database from &apos;https://davovoid.github.io/update-v1.json&apos; (Using a GET petition without URL parameters), and the application may download the files listed in that JSON database so as to update Faicheck. The automatic update check is by default activated, but the updates download and installation are triggered by the user, and the automatic update check can be turned off in the settings menu from the login screen.\n\nThe &apos;Faicheck&apos; project and program is not related with the &apos;Universidad de Vigo&apos; nor the &apos;Servicio de Teledocencia&apos; nor the &apos;Faitic Platform&apos;."
+                                android:id="@+id/textView3"
+                                android:fontFamily="sans-serif-light"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </ScrollView>
+
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+        dScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

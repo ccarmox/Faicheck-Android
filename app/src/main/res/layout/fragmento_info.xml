@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. Cristian Do Carmo Rodriguez
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff4e0"
+    android:gravity="bottom"
+    android:keepScreenOn="true"
+
+    android:theme="@style/AppTheme">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/arte_faicheck2" />
+
+    <RelativeLayout
+        android:id="@+id/cuadro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/sombra">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="200dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/faicheck" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="26dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Desarrollado por Cristian DCR"
+                    android:textColor="@color/principal_oscuro"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#709fe5">
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="22dp">
+
+                    <LinearLayout
+                        android:id="@+id/cajon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView3"
+                        android:background="@color/principal_oscuro"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView3"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_marginTop="32dp"
+                            android:background="@drawable/boton"
+                            android:padding="6dp"
+                            android:text="INFORMACIÓN"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/web"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/info"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_marginTop="23dp"
+                            android:background="@drawable/boton"
+                            android:padding="6dp"
+                            android:text="WEB DEL PROYECTO"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/politica"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/info"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_marginTop="23dp"
+                            android:background="@drawable/boton"
+                            android:padding="6dp"
+                            android:text="POLÍTICA DE PRIVACIDAD"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/licencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/info"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_marginTop="23dp"
+                            android:background="@drawable/boton"
+                            android:padding="6dp"
+                            android:text="LICENCIA"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/cajon"
+                        android:layout_marginTop="-5dp"
+                        android:background="@drawable/gradiente">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Faicheck (Android) es una aplicación libre basada en la aplicación para ordenador Faicheck capaz de interactuár con el asistente personal Blue y la aplicación Vigo Bus."
+                        android:textColor="@color/principal"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_above="@+id/cajon"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="-5dp"
+                        android:background="@drawable/gradiente_negro_girado">
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3c5d38"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+</RelativeLayout>

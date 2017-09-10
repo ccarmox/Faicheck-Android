@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/informacion"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="Información"/>
+
+        <item
+            android:id="@+id/web"
+            android:icon="@drawable/ic_public_black_24dp"
+            android:title="Web Del Proyecto"/>
+
+        <item
+            android:id="@+id/politica"
+            android:icon="@drawable/ic_https_black_24dp"
+            android:title="Política de Privacidad"/>
+
+
+        <item
+            android:id="@+id/licencia"
+            android:icon="@drawable/ic_insert_drive_file_black_24dp"
+            android:title="Licencia"/>
+
+
+    </group>
+
+
+</menu>
